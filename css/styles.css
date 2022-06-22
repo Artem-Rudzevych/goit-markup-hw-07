@@ -389,7 +389,7 @@ header {
 .footer__contact-list a:focus {
   color: var(--hover-text-color);
 }
-.contact-icon {
+.header-contact__icon {
   fill: currentColor;
   margin-right: 10px;
 }
