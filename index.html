@@ -22,42 +22,48 @@
   <body>
     <!--Header-->
     <header>
-      <div class="container head-flex">
-        <nav class="head-flex">
-          <a class="logo" href="/goit-markup-hw-05/index.html"
-            ><span class="logo-span">Web</span>Studio</a
-          >
-          <ul class="header-menu list-style head-flex">
-            <li class="flex-menu">
-              <a href="./index.html" class="link link-current">Студия</a>
+      <div class="container">
+        <div class="header-flex">
+          <nav class="header-nav">
+            <a class="header-nav__logo" href="/goit-markup-hw-05/index.html"
+              ><span class="header-nav__span">Web</span>Studio</a
+            >
+            <ul class="header-menu list-style">
+              <li class="header-menu__items">
+                <a href="./index.html" class="header-menu__link link-current"
+                  >Студия</a
+                >
+              </li>
+              <li class="header-menu__items">
+                <a href="./portfolio.html" class="header-menu__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="header-menu__items">
+                <a href="/contact" class="header-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <ul class="header-contact list-style header-flex">
+            <li class="header-contact__items">
+              <a href="mailto:info@devstudio.com" class="header-contact__link">
+                <svg class="contact-icon" width="16" height="12">
+                  <use href="./images/icons.svg#mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="flex-menu">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="flex-menu">
-              <a href="/contact" class="link">Контакты</a>
+            <li class="header-contact__items">
+              <a href="tel:+380991111111" class="header-contact__link">
+                <svg class="contact-icon" width="10" height="16">
+                  <use href="./images/icons.svg#tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-
-        <ul class="header-contact list-style head-flex">
-          <li class="flex-cont">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="contact-icon" width="16" height="12">
-                <use href="./images/icons.svg#mail"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="flex-cont">
-            <a href="tel:+380991111111" class="link">
-              <svg class="contact-icon" width="10" height="16">
-                <use href="./images/icons.svg#tel"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 

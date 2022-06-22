@@ -57,11 +57,101 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.about.section {
-  padding-top: 0px;
+/* Стилизация списка через класс */
+.list-style {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
+/* Стилизация Лого */
+.header-nav__logo {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--logo-stan-color);
+  margin-right: 93px;
+}
+.header-nav__span {
+  color: var(--hover-text-color);
+}
+.footer-logo-color {
+  color: var(--primary-background-color);
+}
+/* Header */
 header {
   border-bottom: 1px solid var(--border-head-color);
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-menu__items:not(:last-child) {
+  margin-right: 50px;
+}
+.header-menu__link {
+  position: relative;
+  display: block;
+}
+/* Стилизация меню */
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link-current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-text-color);
+}
+
+.header-menu .header-menu__link {
+  display: block;
+  color: var(--title-color);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition: color 250ms var(--cubic-bezier);
+}
+.header-menu__items .header-menu__link:hover,
+.header-menu__items .header-menu__link:focus {
+  color: var(--hover-text-color);
+}
+.header-menu__items .link-current {
+  color: var(--hover-text-color);
+}
+.header-contact .header-contact__items:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact .header-contact__link {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 32px 0;
+  transition: color 250ms var(--cubic-bezier);
+}
+.header-contact .header-contact__link:hover,
+.header-contact .header-contact__link:focus {
+  color: var(--hover-text-color);
 }
 /* Форма */
 .form {
@@ -120,12 +210,7 @@ header {
   outline: 0;
   fill: var(--hover-text-color);
 }
-/* .form-field:focus-within .form-input,
-.form-field:focus-within .form-icon {
-  border-color: var(--hover-text-color);
-  outline: 0;
-  fill: var(--hover-text-color);
-} */
+
 .form-coment::placeholder {
   color: var(--placeholder-color);
 }
@@ -214,12 +299,6 @@ header {
   width: 1200px;
 }
 
-.head-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 /* Модальное Окно */
 .backdrop.is-hidden {
   visibility: hidden;
@@ -283,87 +362,7 @@ header {
   transition: color 250ms var(--cubic-bezier);
 }
 
-/* Стилизация Лого */
-.logo {
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: var(--logo-stan-color);
-}
-.logo-span {
-  color: var(--hover-text-color);
-}
-.footer-logo-color {
-  color: var(--primary-background-color);
-}
-/* Стилизация списка через класс */
-.list-style {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-/* Стилизация меню */
-.header-menu .flex-menu:not(:last-child) {
-  margin-right: 50px;
-}
-.flex-menu {
-  position: relative;
-}
-
-.header-menu {
-  margin-left: 93px;
-}
-
-.link-current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--hover-text-color);
-}
-
-.header-menu .link {
-  display: block;
-  color: var(--title-color);
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  transition: color 250ms var(--cubic-bezier);
-}
-.header-menu .link:hover,
-.header-menu .link:focus {
-  color: var(--hover-text-color);
-}
-.header-menu .link.link-current {
-  color: var(--hover-text-color);
-}
 /* Стилизация контактов */
-.header-contact .flex-cont:not(:last-child) {
-  margin-right: 50px;
-}
-.flex-cont {
-  display: flex;
-
-  align-items: center;
-}
-.header-contact .link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 32px 0;
-  transition: color 250ms var(--cubic-bezier);
-}
 
 .footer-contact a {
   line-height: 1.14;
@@ -375,10 +374,7 @@ header {
 .footer-li {
   margin-bottom: 9px;
 }
-.header-contact a:hover,
-.header-contact a:focus {
-  color: var(--hover-text-color);
-}
+
 .footer-contact a:hover,
 .footer-contact a:focus {
   color: var(--hover-text-color);
@@ -510,6 +506,10 @@ header {
   line-height: 1.7;
 }
 /* Секция About */
+.about {
+  padding-top: 0px;
+}
+
 .about-thumb {
   position: absolute;
   bottom: 0;
