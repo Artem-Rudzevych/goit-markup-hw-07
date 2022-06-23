@@ -1,0 +1,17 @@
+.footer__contact-list a {
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contact-footer-text);
+    text-decoration: none;
+    transition: color 250ms var(--cubic-bezier);
+  }
+  .footer_link {
+    display: inline-block;
+    margin-bottom: 9px;
+  }
+  
+  .footer__contact-list a:hover,
+  .footer__contact-list a:focus {
+    color: var(--hover-text-color);
+  }
+  
