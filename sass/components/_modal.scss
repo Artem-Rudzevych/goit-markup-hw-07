@@ -60,6 +60,9 @@
   }
   .form__list{
     @extend %list-style;
+    & .form__field--button{
+      text-align: center;
+    }
   }
   .form__field {
     position: relative;
@@ -71,7 +74,6 @@
         margin-bottom: 20px;
       }
   }
-
   
   .form__label {
     display: inline-block;

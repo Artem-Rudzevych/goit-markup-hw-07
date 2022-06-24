@@ -44,14 +44,14 @@
     margin-bottom: 16px;
   }
   
-  .social-list {
+  .social__list {
     @extend .team__list;
     & li:not(:last-child) {
         margin-right: 10px;
       }
   }
   
-  .social-link {
+  .social__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +69,6 @@
       }
   }
  
-  .social-icon {
+  .social__icon {
     fill: currentColor;
   }

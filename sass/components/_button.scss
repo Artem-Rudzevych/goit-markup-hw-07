@@ -50,6 +50,8 @@
     display: flex;
     align-items: center;
     @extend .hero-box__button;
+    padding-left: 29px;
+    padding-right: 13px;
   }
   .modal-button__close {
     display: flex;
@@ -75,5 +77,8 @@
   }
   
   .form__button {
+    @extend .hero-box__button;
     text-align: center;
+    padding: 10px 55px;
+
   }
