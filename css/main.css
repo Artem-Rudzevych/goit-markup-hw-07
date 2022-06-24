@@ -74,7 +74,7 @@ img {
   overflow: hidden;
 }
 
-.header-contact, .header-menu, .form__list {
+.advantages, .header-contact, .header-menu, .form__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -212,29 +212,6 @@ img {
   fill: var(--hover-text-color);
 }
 
-.connect__icon {
-  margin-left: 10px;
-}
-
-.connect__input {
-  width: 358px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: transparent;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: var(--primary-background-color);
-  padding: 15px 16px;
-  margin-right: 12px;
-}
-.connect__input:focus {
-  border-color: var(--hover-text-color);
-  outline: 0;
-  fill: var(--hover-text-color);
-}
-
 .checkbox {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -277,6 +254,29 @@ img {
   position: relative;
   display: inline-flex;
   align-items: center;
+}
+
+.connect__icon {
+  margin-left: 10px;
+}
+
+.connect__input {
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--primary-background-color);
+  padding: 15px 16px;
+  margin-right: 12px;
+}
+.connect__input:focus {
+  border-color: var(--hover-text-color);
+  outline: 0;
+  fill: var(--hover-text-color);
 }
 
 .logo {
@@ -484,4 +484,40 @@ header {
 .footer__contact-list a:hover,
 .footer__contact-list a:focus {
   color: var(--hover-text-color);
+}
+
+.advantages {
+  display: flex;
+}
+
+.advantages__list {
+  width: calc((100% - 90px) / 4);
+}
+.advantages__list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--button-bg-color);
+}
+
+.advantages__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.advantages__text {
+  margin: 0;
+  line-height: 1.7;
 }/*# sourceMappingURL=main.css.map */
