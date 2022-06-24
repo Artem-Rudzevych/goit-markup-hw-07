@@ -69,7 +69,7 @@ img {
   overflow: hidden;
 }
 
-.footer__contact-list, .connect__list, .client__list, .team__list, .social__list, .about__list, .advantages__list, .form__list, .header-contact, .header-menu {
+.filter__list, .footer__contact-list, .connect__list, .client__list, .team__list, .social__list, .about__list, .advantages__list, .form__list, .header-contact, .header-menu {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -733,4 +733,12 @@ header {
 .footer_link {
   display: inline-block;
   margin-bottom: 9px;
+}
+
+.filter__list {
+  display: flex;
+  justify-content: center;
+}
+.filter__list .filter__items:not(:last-child) {
+  margin-right: 8px;
 }/*# sourceMappingURL=main.css.map */
