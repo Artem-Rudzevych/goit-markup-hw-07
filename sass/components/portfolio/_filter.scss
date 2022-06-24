@@ -1,7 +1,7 @@
-.filter{
+.portfolio{
     @extend %section;
 }
-.filter__list {
+.filter {
     @extend %list-style;
     display: flex;
     justify-content: center;
