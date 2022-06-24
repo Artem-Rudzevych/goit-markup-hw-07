@@ -43,6 +43,11 @@ body {
   color: var(--text-color);
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -55,13 +60,27 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .header-contact, .header-menu {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.header-contact, .header {
+.header-contact, .header-menu, .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -94,33 +113,7 @@ header {
   justify-content: space-between;
 }
 
-.header-menu__items:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-menu__link {
-  position: relative;
-  display: block;
-}
-
 /* Стилизация меню */
-.header-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-menu__link--current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--hover-text-color);
-}
-
 .header-menu .header-menu__link {
   display: block;
   color: var(--title-color);
@@ -133,8 +126,22 @@ header {
   transition: color 250ms var(--cubic-bezier);
 }
 
-.header-menu__items .header-menu__link:hover,
-.header-menu__items .header-menu__link:focus {
+.header-menu__link {
+  position: relative;
+  display: block;
+}
+.header-menu__link--current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--hover-text-color);
+}
+
+.header-menu .header-menu__link:hover, .header-menu .header-menu__link:focus {
   color: var(--hover-text-color);
 }
 
@@ -142,7 +149,11 @@ header {
   color: var(--hover-text-color);
 }
 
-.header-contact .header-contact__items:not(:last-child) {
+.header-menu__items:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contact__items:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -158,8 +169,7 @@ header {
   transition: color 250ms var(--cubic-bezier);
 }
 
-.header-contact .header-contact__link:hover,
-.header-contact .header-contact__link:focus {
+.header-contact .header-contact__link:hover, .header-contact .header-contact__link:focus {
   color: var(--hover-text-color);
 }
 
