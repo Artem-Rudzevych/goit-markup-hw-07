@@ -43,7 +43,7 @@ body {
   color: var(--text-color);
 }
 
-.section {
+.section, .about {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -74,10 +74,19 @@ img {
   overflow: hidden;
 }
 
-.advantages, .header-contact, .header-menu, .form__list {
+.about__list, .advantages, .header-contact, .header-menu, .form__list {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: var(--title-color);
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .header-contact, .header-menu, .header {
@@ -520,4 +529,37 @@ header {
 .advantages__text {
   margin: 0;
   line-height: 1.7;
+}
+
+.about {
+  padding-top: 0px;
+}
+
+.about__list {
+  display: flex;
+}
+.about__list .about__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.about__item {
+  position: relative;
+}
+
+.about__thumb {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--thumb-color);
+}
+
+.about__text {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
 }/*# sourceMappingURL=main.css.map */
