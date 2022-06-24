@@ -43,11 +43,6 @@ body {
   color: var(--text-color);
 }
 
-.section, .team, .about {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -74,13 +69,18 @@ img {
   overflow: hidden;
 }
 
-.team__list, .social-list, .about__list, .advantages, .header-contact, .header-menu, .form__list {
+.client__list, .team__list, .social-list, .about__list, .advantages__list, .header-contact, .header-menu, .form__list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.team__title, .about__title {
+.client, .team, .about, .advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.client__title, .team__title, .about__title {
   font-weight: 700;
   font-size: 36px;
   text-align: center;
@@ -495,14 +495,14 @@ header {
   color: var(--hover-text-color);
 }
 
-.advantages {
+.advantages__list {
   display: flex;
 }
 
-.advantages__list {
+.advantages__item {
   width: calc((100% - 90px) / 4);
 }
-.advantages__list:not(:last-child) {
+.advantages__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -630,4 +630,37 @@ header {
 
 .social-icon {
   fill: currentColor;
+}
+
+.client__list {
+  display: flex;
+}
+
+.client__card {
+  width: calc((100% - 150px) / 6);
+}
+.client__card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--icons-border-color);
+  border-radius: 4px;
+  fill: var(--icons-border-color);
+  height: 92px;
+  background-color: var(--primary-background-color);
+  cursor: pointer;
+  transition: fill 250ms var(--cubic-bezier), border 250ms var(--cubic-bezier);
+}
+.client__link:hover, .client__link:focus {
+  border: 1px solid var(--hover-text-color);
+  fill: var(--hover-text-color);
+}
+
+.client__icon {
+  width: 106px;
+  height: 60px;
 }/*# sourceMappingURL=main.css.map */

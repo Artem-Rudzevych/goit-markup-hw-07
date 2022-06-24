@@ -1,8 +1,12 @@
 .advantages {
+  @extend %section;
+    
+  }
+  .advantages__list{
     @extend %list-style;
     display: flex;
   }
-  .advantages__list {
+  .advantages__item {
     width: calc((100% - 3 * 30px) / 4);
     &:not(:last-child) {
         margin-right: 30px;
