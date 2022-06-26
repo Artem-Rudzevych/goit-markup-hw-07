@@ -34,7 +34,7 @@ html {
 }
 
 body {
-  font-family: var(--body-font-family);
+  font-family: Roboto, sans-serif;
   background-color: var(--primary-background-color);
   font-style: normal;
   font-size: 14px;
@@ -97,7 +97,7 @@ img {
 
 .logo {
   text-decoration: none;
-  font-family: "Raleway", sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   color: var(--logo-stan-color);
@@ -117,8 +117,8 @@ header {
 
 .header-nav {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 /* Стилизация меню */
