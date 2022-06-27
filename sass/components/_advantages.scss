@@ -1,5 +1,5 @@
 .advantages {
-  @extend %section;
+  @include sectionPadding;
     
   }
   .advantages__list{

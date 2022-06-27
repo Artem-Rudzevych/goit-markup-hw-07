@@ -1,5 +1,5 @@
 .portfolio{
-    @extend %section;
+    @include sectionPadding;
 }
 .filter {
     @extend %list-style;

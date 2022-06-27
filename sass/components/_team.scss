@@ -1,5 +1,5 @@
 .team {
-  @extend %section;
+  @include sectionPadding;
     background-color: var(--button-bg-color);
   }
   .team__title{
