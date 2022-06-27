@@ -3,8 +3,7 @@
 }
 .filter {
     @extend %list-style;
-    display: flex;
-    justify-content: center;
+    @include displayFlex;
     & .filter__items:not(:last-child) {
         margin-right: 8px;
       }

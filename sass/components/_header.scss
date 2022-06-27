@@ -2,17 +2,17 @@ header {
     border-bottom: 1px solid var(--border-head-color);
   }
  .header{
-    @extend %header-flex;
+    @include flexCenter($main-axis: space-between);
  }
   .header-nav {
-    @include flexCenter($main-axis: space-between)
+    @include flexCenter($main-axis: space-between);
     
   }
   /* Стилизация меню */
   
   .header-menu {
     @extend %list-style;
-    @extend %header-flex;
+    @include flexCenter($main-axis: space-between);
     margin-left: 93px;
 
     & .header-menu__link {
